@@ -51,7 +51,7 @@
     "preload": "echo ENV=${ENV:-'development'} && node -r dotenv/config --",
     "migration:generate": "sequelize-cli migration:generate",
     "migration:run": "npm run build && sequelize-cli db:migrate",
-    "migration:revert": "npm run build && npm run preload && sequelize-cli db:migrate:undo"
+    "migration:revert": "npm run build && sequelize-cli db:migrate:undo"
   },
   "author": "",
   "license": "MIT",
